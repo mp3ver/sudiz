@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(0,0,250,1) 20%, rgba(255,255,255,1) 100%)
+}
+.fill{
+    width: 60%;
+    height: 100%;
+}
+.authorization{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    color: orange;
+}
+
+.authorizationBlock{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    padding: 5px 20px;
+    justify-content: space-around;
+    margin-top: auto;
+}
+.authorizationBlock input{
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+}
+
+.version{
+    margin-top: auto;
+    color:white;
+}

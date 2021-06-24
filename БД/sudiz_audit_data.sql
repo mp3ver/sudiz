@@ -1,0 +1,37 @@
+create table audit_data
+(
+    id             int auto_increment
+        primary key,
+    login          mediumtext null,
+    resource       mediumtext null,
+    operation_type mediumtext null,
+    old_value      mediumtext null,
+    new_value      mediumtext null
+)
+    charset = utf8mb4;
+
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (1, 'dasem', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=1, name=''????? "?????????"'', address=''?????????, 238'', phoneNumber=''8-800-555-35-35''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (2, 'dasem', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=3, name=''????? "?????????"'', address=''?????????, 238'', phoneNumber=''8-800-555-35-35''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (3, 'dasem', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=4, name=''????? "?????????"'', address=''?????????, 238'', phoneNumber=''8-800-555-35-35''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (4, 'dasem', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=5, name=''Завод "Гладиолус"'', address=''Куйбышева, 238'', phoneNumber=''8-800-555-35-35''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (5, 'dasem', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=6, name=''Паша Просыпун'', address=''Сонный проспект, 2'', phoneNumber=''573-561-875''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (6, 'dasem', 'class bookstore.model.entities.Dealer', 'UPDATE', 'Dealer{id=6, name=''Паша Просыпун'', address=''Сонный проспект, 2'', phoneNumber=''573-561-875''}', 'Dealer{id=6, name=''Паша Чёрт'', address=''Сонный проспект, 2'', phoneNumber=''573-561-875''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (7, 'dasem', 'class bookstore.model.entities.Dealer', 'DELETE', 'Dealer{id=6, name=''Паша Чёрт'', address=''Сонный проспект, 2'', phoneNumber=''573-561-875''}', null);
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (8, 'supply', 'class bookstore.model.entities.Dealer', 'CREATE', null, 'Dealer{id=7, name=''Завод "Одуванчик"'', address=''Ленина, 35'', phoneNumber=''2-999-999''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (9, 'supply', 'class bookstore.model.entities.Detail', 'CREATE', null, 'Detail{id=1, vendorCode=''ЛО152'', name=''Стул'', note=''Стул''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (10, 'supply', 'class bookstore.model.entities.Detail', 'DELETE', 'Detail{id=1, vendorCode=''ЛО152'', name=''Стул'', note=''Стул''}', null);
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (11, 'supply', 'class bookstore.model.entities.Detail', 'CREATE', null, 'Detail{id=2, vendorCode=''ЛО152'', name=''Стул'', note=''Стул''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (12, 'supply', 'class bookstore.model.entities.Detail', 'UPDATE', 'Detail{id=2, vendorCode=''ЛО152'', name=''Стул'', note=''Стул''}', 'Detail{id=2, vendorCode=''ЛО152'', name=''Стул'', note=''Хороший Стул''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (13, 'supply', 'class bookstore.model.entities.Dealer', 'UPDATE', 'Dealer{id=5, name=''Завод "Гладиолус"'', address=''Куйбышева, 238'', phoneNumber=''8-800-555-35-35''}', 'Dealer{id=5, name=''Завод "Гладиолус"'', address=''Куйбышева, 23'', phoneNumber=''8-800-555-35-35''}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (14, 'supply', 'class bookstore.model.entities.Dealer', 'DELETE', 'Dealer{id=7, name=''Завод "Одуванчик"'', address=''Ленина, 35'', phoneNumber=''2-999-999''}', null);
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (15, 'admin', 'class bookstore.model.entities.Supply', 'CREATE', null, 'Supply{id=null, catalogRecordId=3, date=Fri Jun 18 12:18:19 YEKT 2021, amount=5, user=admin, totalPrice=1155.00}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (16, 'admin', 'class bookstore.model.entities.Supply', 'CREATE', null, 'Supply{id=null, catalogRecordId=2, date=Fri Jun 18 12:19:01 YEKT 2021, amount=15, user=admin, totalPrice=645.00}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (17, 'admin', 'class bookstore.model.entities.Supply', 'CREATE', null, 'Supply{id=null, catalogRecordId=5, date=Fri Jun 18 12:19:12 YEKT 2021, amount=5, user=admin, totalPrice=2175.00}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (18, 'admin', 'class bookstore.model.entities.Supply', 'CREATE', null, 'Supply{id=null, catalogRecordId=2, date=Fri Jun 18 13:57:23 YEKT 2021, amount=3, user=admin, totalPrice=129.00}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (19, 'supply', 'class bookstore.model.entities.Supply', 'CREATE', null, 'Supply{id=null, catalogRecordId=3, date=Fri Jun 18 14:03:42 YEKT 2021, amount=4, user=supply, totalPrice=924.00}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (20, 'admin', 'class bookstore.model.entities.User', 'CREATE', null, 'User{id=5, login=''DrakeTHPS'', password=''45874521Zz'', roleUser=null}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (21, 'admin', 'class bookstore.model.entities.User', 'DELETE', 'User{id=5, login=''DrakeTHPS'', password=''45874521Zz'', roleUser=null}', null);
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (22, 'admin', 'class bookstore.model.entities.User', 'CREATE', null, 'User{id=6, login=''DrakeTHPS'', password=''2358Zed'', roleUser=RoleUser{id=1, note=''Администратор'', role=ROLE_ADMIN}}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (23, 'admin', 'class bookstore.model.entities.User', 'UPDATE', 'User{id=6, login=''DrakeTHPS'', password=''2358Zed'', roleUser=RoleUser{id=1, note=''Администратор'', role=ROLE_ADMIN}}', 'User{id=6, login=''DrakeTHPS'', password=''2358Zed'', roleUser=RoleUser{id=null, note=''null'', role=ROLE_SUPPLY}}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (24, 'admin', 'class bookstore.model.entities.User', 'UPDATE', 'User{id=6, login=''DrakeTHPS'', password=''2358Zed'', roleUser=RoleUser{id=1, note=''Администратор'', role=ROLE_ADMIN}}', 'User{id=6, login=''DrakeTHPS'', password=''2358Zed'', roleUser=RoleUser{id=null, note=''null'', role=ROLE_SUPPLY}}');
+INSERT INTO sudiz.audit_data (id, login, resource, operation_type, old_value, new_value) VALUES (25, 'admin', 'class bookstore.model.entities.CatalogRecord', 'CREATE', null, 'CatalogRecord{id=null, dealer=Dealer{id=8, name=''Автосервис "Починка"'', address=''Гашкова, 75'', phoneNumber=''8-123-456-76-83''}, currentPrice=123, vendorCode=''null''}');

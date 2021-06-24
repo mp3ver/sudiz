@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.catalog {
+    flex: 1;
+    justify-content: space-between;
+    padding: 1% 10%;
+}
+
+.detailCard {
+    min-width: 250px;
+    width: 23%;
+    margin: 5px;
+    display: inline-block;
+}
+
+.submit_button {
+    width: 45%;
+    height: 40px;
+    margin-left: auto;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}

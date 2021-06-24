@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.header{
+    display:flex;
+    flex-direction:row;
+    height: 85px;
+    background-color: blue;
+    width: 80%;
+    border-radius: 0 0 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.title{
+    color:orange;
+}
+.navigation{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    align-items: center;
+}
+.navButton{
+    margin: 0 5px;
+    border: none;
+    background-color: orange;
+    height: 25px;
+    padding: 0 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.contentArea{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
